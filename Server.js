@@ -3,7 +3,7 @@ const express = require('express');
 const session = require('express-session');
 const mysql = require('mysql2');
 const PORT = process.env.PORT || 3001;
-const routes = require('./controllers')
+
 const db = require('./config/connection');
 const { engine } = require('express-handlebars');
 const { createConnection } = require('mysql2');
@@ -32,5 +32,5 @@ app.set('views', './views');
 app.use(auth_routes, private_routes, public_routes);
 
 db.sync().then(() => {
-  app.listen(PORT, () => console.log(`:) Server started on ${PORT} %s`))
+  app.listen(PORT, () => console.log(`:) Server running on ${PORT}`))
 });

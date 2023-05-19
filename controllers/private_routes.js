@@ -3,7 +3,7 @@ const User = require('../models/User');
 
 
 //  Middleware function that checks if a user
-//  is authenticated - check that their user id is stored to req.session.user_id
+//  is authenticated to check that the user id is stored to req.session.user_id
 function isAuthenticated(req, res, next) {
     if (!req.session.user_id) {
         return res.redirect('/login');
