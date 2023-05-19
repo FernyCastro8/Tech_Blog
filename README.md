@@ -89,14 +89,3 @@ package.json
 - URL
 
 
-- [ Walkthrough video ]
-
-
-    bcrypt  5.1.0
-    connect-session-sequelize  7.1.6
-    dotenv  6.0.3
-    express  4.18.2
-    express-handlebars  7.0.7
-    mysql2  3.2.3
-    nodemon  2.0.22,
-    sequelize  6.31.0
